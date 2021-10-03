@@ -213,11 +213,10 @@
                 <div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="mb-2 mb-lg-0">
-                      <h3 class="mb-0 fw-bold text-white">Manage Student</h3>
+                      <h3 class="mb-0 fw-bold text-white">Carousel</h3>
                     </div>
                     <div>
-                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Student</button></a>
-                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit">Upload</button></a>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Carousel</button></a>
                     </div>
                     
                   </div>
@@ -226,7 +225,7 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabelOne">Add Student
+                        <h5 class="modal-title" id="exampleModalLabelOne">Add Carousel
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -332,99 +331,147 @@
               <!-- card  -->
               <div class="card">
                 <!-- table  -->
-  <div class="row">
-      <div class="col-md-12">
-          <div class="card">
-              <div class="card-body">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default"><i data-feather="search" ></i></span>
-                    <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-                    <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
-                          <div class="dropdown" >
-                            <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <option>Select Term</option>
-                            <option>Fall</option>
-                            <option>Summer</option>
-                            <option>Spring</option>
-                            </select>
-                            </div>
-                          <div class="dropdown" style="margin-left:2rem;" >
-                              <select class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <option>Select Block</option>
-                              <option>1</option>
-                              <option>2</option>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body" >
+                          <!-- Sidebar -->
+                          <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
+                            <div class="dropdown" >
+                              <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <option>Select Program</option>
+                              <option>ACS</option>
+                              <option>MIS</option>
+                              <option>MBA</option>
                               </select>
-                            </div>
-                          <div class="dropdown" style="margin-left:2rem;">
-                          <select class="btn btn-info dropdown-toggle" id='date-dropdown'>
-                          </select>
+                              </div>
+                            <div class="dropdown" style="margin-left:2rem;">
+                              <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <option>Select Term</option>
+                              <option>Fall</option>
+                              <option>Summer</option>
+                              <option>Spring</option>
+                              </select>
+                              </div>
+                            <div class="dropdown" style="margin-left:2rem;" >
+                                <select class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <option>Select Block</option>
+                                <option>1</option>
+                                <option>2</option>
+                                </select>
+                              </div>
+                            <div class="dropdown" style="margin-left:2rem;">
+                            <select class="btn btn-info dropdown-toggle" id='date-dropdown'>
+                            </select>
+                          </div>
+                          <div class="button" style="margin-left:2rem;">
+                            <a href="adminCarousel2.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Search</button></a>
+                          </div>
                         </div>
+                        <div>
+                          <br>
+                          <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Fall-1-2020
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" >Courses</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td >
+                                             <h5 class="font-medium mb-0">Standard</h5>
+                                          </td>
+                                          <td >
+                                            <span class="badge rounded-pill bg-warning">Big Data</span>
+                                            <span class="badge rounded-pill bg-warning">Java</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td >
+                                             <h5 class="font-medium mb-0">Expedited</h5>
+                                          </td>
+                                          <td >
+                                           
+                                            <span class="badge rounded-pill bg-primary">Big Data</span>
+                                            <span class="badge rounded-pill bg-primary">Java</span>
+                                          <span class="badge rounded-pill bg-primary">Project Management</span>
+                                          </td>
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                                  Fall-2-2020
+                                </button>
+                              </h2>
+                              <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" >Courses</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td >
+                                             <h5 class="font-medium mb-0">Standard</h5>
+                                          </td>
+                                          <td >
+                                            <span class="badge rounded-pill bg-warning">Professionalism</span>
+                                            <span class="badge rounded-pill bg-warning">Java</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td >
+                                             <h5 class="font-medium mb-0">Expedited</h5>
+                                          </td>
+                                          <td >
+                                           
+                                            <span class="badge rounded-pill bg-primary">Financial Modelling</span>
+                                            <span class="badge rounded-pill bg-primary">DBMS</span>
+                                          <span class="badge rounded-pill bg-primary">Networking</span>
+                                          </td>
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <br>
+                        <iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://nwmissouri-my.sharepoint.com/personal/s538311_nwmissouri_edu/_layouts/15/Doc.aspx?sourcedoc={89a7cc6c-47ad-48bd-9ee9-e64c3c12cde7}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True"></iframe>
                       </div>
-                  </div>
-              </div>
-              <div class="table-responsive">
-                  <table class="table no-wrap user-table mb-0">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Name</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">919#</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Start Term</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Category</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Welcome Sent</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Schedule Sent</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Daniel Kristeen</h5> </a> 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">919919919</h5>
+                    </div>
 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">Spring-1-2021</h5>
-                        </td>
-                        <td>
-                            <span class="badge rounded-pill bg-primary">Standard</span>
-                        </td>
-                        <td style="align-items: center;">
-                                <i data-feather="x-circle" class="btn-circle-disable" ></i>
-                        </td>
-                        <td>
-                            <i data-feather="check-circle" class="btn-circle-enable"  ></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Harry Kristeen</h5> </a> 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">9193419919</h5>
 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">Spring-2-2021</h5>
-                        </td>
-                        <td>
-                            <span class="badge rounded-pill bg-warning">Expedited</span>
-                        </td>
-                        <td style="align-items: center;">
-                            <i data-feather="check-circle" class="btn-circle-enable"  ></i>
-                        </td>
-                        <td>
-                            <i data-feather="x-circle" class="btn-circle-disable" ></i>
 
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+            </div>
             </div>
           </div>
           <!-- row  -->
@@ -519,6 +566,23 @@ actualBtn.addEventListener('change', function(){
     </script>
     
       <style type="text/css">
+
+        .container1 {
+          display: flex;
+      }
+
+      .container__sidebar1 {
+          width: 30%;
+      }
+
+      .container__main1 {
+          /* Take the remaining width */
+          flex: 1;
+
+          /* Make it scrollable */
+          overflow: auto;
+      }
+
         .labeld {
             background-color: indigo;
             color: white;

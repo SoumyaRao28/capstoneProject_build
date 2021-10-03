@@ -213,11 +213,10 @@
                 <div>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="mb-2 mb-lg-0">
-                      <h3 class="mb-0 fw-bold text-white">Manage Student</h3>
+                      <h3 class="mb-0 fw-bold text-white">Carousel</h3>
                     </div>
                     <div>
-                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Student</button></a>
-                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#templateOneEdit" data-whatever="@getbootstraptemplateoneEdit">Upload</button></a>
+                      <a href="#"><button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Add Carousel</button></a>
                     </div>
                     
                   </div>
@@ -226,7 +225,7 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabelOne">Add Student
+                        <h5 class="modal-title" id="exampleModalLabelOne">Add Carousel
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -332,99 +331,51 @@
               <!-- card  -->
               <div class="card">
                 <!-- table  -->
-  <div class="row">
-      <div class="col-md-12">
-          <div class="card">
-              <div class="card-body">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default"><i data-feather="search" ></i></span>
-                    <input type="text" class="w-25 p-2" style="border:1px solid grey; border-radius: 5px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-
-                    <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
-                          <div class="dropdown" >
-                            <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <option>Select Term</option>
-                            <option>Fall</option>
-                            <option>Summer</option>
-                            <option>Spring</option>
-                            </select>
-                            </div>
-                          <div class="dropdown" style="margin-left:2rem;" >
-                              <select class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <option>Select Block</option>
-                              <option>1</option>
-                              <option>2</option>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body" style="height:100vh">
+                          <!-- Sidebar -->
+                          <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
+                            <div class="dropdown" >
+                              <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <option>Select Program</option>
+                              <option>ACS</option>
+                              <option>MIS</option>
+                              <option>MBA</option>
                               </select>
-                            </div>
-                          <div class="dropdown" style="margin-left:2rem;">
-                          <select class="btn btn-info dropdown-toggle" id='date-dropdown'>
-                          </select>
+                              </div>
+                            <div class="dropdown" style="margin-left:2rem;">
+                              <select class="btn btn-info dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <option>Select Term</option>
+                              <option>Fall</option>
+                              <option>Summer</option>
+                              <option>Spring</option>
+                              </select>
+                              </div>
+                            <div class="dropdown" style="margin-left:2rem;" >
+                                <select class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <option>Select Block</option>
+                                <option>1</option>
+                                <option>2</option>
+                                </select>
+                              </div>
+                            <div class="dropdown" style="margin-left:2rem;">
+                            <select class="btn btn-info dropdown-toggle" id='date-dropdown'>
+                            </select>
+                          </div>
+                          <div class="button" style="margin-left:2rem;">
+                            <a href="adminCarousel1.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Search</button></a>
+                          </div>
                         </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="table-responsive">
-                  <table class="table no-wrap user-table mb-0">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Name</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">919#</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Start Term</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Category</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Welcome Sent</th>
-                        <th scope="col" class="border-0 text-uppercase font-medium">Schedule Sent</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Daniel Kristeen</h5> </a> 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">919919919</h5>
+                       
+                    </div>
 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">Spring-1-2021</h5>
-                        </td>
-                        <td>
-                            <span class="badge rounded-pill bg-primary">Standard</span>
-                        </td>
-                        <td style="align-items: center;">
-                                <i data-feather="x-circle" class="btn-circle-disable" ></i>
-                        </td>
-                        <td>
-                            <i data-feather="check-circle" class="btn-circle-enable"  ></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                           <a  data-bs-toggle="modal" data-bs-target="#exampleModalScrollable" data-whatever="@getbootstraptemplateoneSend" ><h5 class="font-medium mb-0">Harry Kristeen</h5> </a> 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">9193419919</h5>
 
-                        </td>
-                        <td>
-                            <h5 class="font-medium mb-0">Spring-2-2021</h5>
-                        </td>
-                        <td>
-                            <span class="badge rounded-pill bg-warning">Expedited</span>
-                        </td>
-                        <td style="align-items: center;">
-                            <i data-feather="check-circle" class="btn-circle-enable"  ></i>
-                        </td>
-                        <td>
-                            <i data-feather="x-circle" class="btn-circle-disable" ></i>
 
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-          </div>
-      </div>
-  </div>
+                    </div>
+                </div>
+            </div>
             </div>
           </div>
           <!-- row  -->
@@ -519,6 +470,23 @@ actualBtn.addEventListener('change', function(){
     </script>
     
       <style type="text/css">
+
+        .container1 {
+          display: flex;
+      }
+
+      .container__sidebar1 {
+          width: 30%;
+      }
+
+      .container__main1 {
+          /* Take the remaining width */
+          flex: 1;
+
+          /* Make it scrollable */
+          overflow: auto;
+      }
+
         .labeld {
             background-color: indigo;
             color: white;
