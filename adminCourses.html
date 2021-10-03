@@ -105,35 +105,16 @@
             </i>  Courses
         </a>
                 </li>
+       <!-- Nav item -->
 
-                        <!-- Nav item -->
-                        <li class="nav-item">
-                            <a class="nav-link has-arrow  collapsed " href="#!" data-bs-toggle="collapse" data-bs-target="#navComponents" aria-expanded="false" aria-controls="navComponents">
-                                <i data-feather="calendar" class="nav-icon icon-xs me-2" >
-                            </i> Terms
-                            </a>
-                            <div id="navComponents" class="collapse " data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                              Add Terms
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            Update Terms
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            View Terms
-                                        </a>
-                                    </li>
-                                
-                                </ul>
-                            </div>
-                        </li>
-                       
+                <li class="nav-item">
+                    <a class="nav-link " href="adminTerms.html" aria-expanded="false">
+                        <i data-feather="calendar" class="nav-icon icon-xs me-2">
+                        </i>  Terms
+                    </a>
+                            </li>
+
+                        
 
                             <!-- Nav item -->
                             <li class="nav-item">
@@ -170,29 +151,10 @@
                       
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow  collapsed " href="#!" data-bs-toggle="collapse" data-bs-target="#navStudent" aria-expanded="false" aria-controls="navStudent">
+                            <a class="nav-link " href="adminStudent.html" aria-expanded="false">
                                 <i data-feather="user" class="nav-icon icon-xs me-2" >
                             </i> Student
                             </a>
-                            <div id="navStudent" class="collapse " data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            Add Students
-                                        </a>
-                                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="#" aria-expanded="false">
-                                                Update Student
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            View Students
-                                        </a>
-                                    </li>
-                                    </ul>
-                                    </div>
                                     </li>
 
                   <!-- Nav item -->
@@ -294,6 +256,7 @@
                             <label for="recipient-name" class="col-form-label">Course Name:</label>
                             <input type="text" class="form-control" id="recipient-name">
                           </div>
+                          <label for="recipient-name" class="col-form-label">Program Name:</label>
                           <select class="form-select" multiple aria-label="multiple select example">
                             <option selected>-----Select One/More Program-----</option>
                             <option value="1">Master of Business Administration - General Management</option>
@@ -366,6 +329,17 @@
                       <input type="text" class="form-control" id="recipient-name" value="12" disabled>
                       <label for="recipient-name" class="col-form-label">Duration of Course:</label>
                       <input type="text" class="form-control" id="recipient-name" value="5" disabled>
+
+                      
+                      <label for="message-text" class="col-form-label">Terms:</label>
+                      <select class="form-select" multiple aria-label="multiple select example" disabled>
+                        <option >Fall Block 1 - 2020</option>                   
+                             <option >Fall Block 2 - 2020</option>
+                        <option >Summer Block 1 - 2020</option>
+
+
+                      </select>
+
                     </div>
                     <div class="mb-3">
                       
@@ -393,9 +367,8 @@
                       <label for="recipient-name" class="col-form-label">Program Name:</label>
                       <label for="message-text" class="col-form-label">Select Program:</label>
                       <select class="form-select" multiple aria-label="multiple select example">
-                        <option selected>-----Select One/More Program-----</option>
-                        <option value="1">Master of Business Administration - General Management</option>
-                        <option value="2">Master of Business Administration - Human Resource</option>
+                        <option value="1" selected>Master of Business Administration - General Management</option>
+                        <option value="2" selected>Master of Business Administration - Human Resource</option>
                         <option value="3">Master of Business Administration - Marketing</option>
                         <option value="4">Master of Business Administration - Business Analytics</option>
                         <option value="5">Master of Business Administration - Management</option>
@@ -406,6 +379,66 @@
                       <input type="text" class="form-control" id="recipient-name" value="12" >
                       <label for="recipient-name" class="col-form-label">Duration of Course:</label>
                       <input type="text" class="form-control" id="recipient-name" value="5" >
+                      <label for="recipient-name" class="col-form-label">Terms:</label>
+                      <select class="form-select" multiple aria-label="multiple select example" >
+                        <option selected>Fall Block 1 - 2020</option>                   
+                             <option selected>Fall Block 2 - 2020</option>
+                        <option selected>Summer Block 1 - 2020</option>
+                      </select>
+                      <div  style="display: flex; flex-direction: row;  ">
+                        <div class="mb-3" >
+                          <label for="message-text" class="col-form-label">Select Terms Block-1:</label>
+                          <div class="dropdown">
+                            <select class="btn btn-secondary dropdown-toggle" style="width:13rem" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <option>Select Term</option>
+                            <option>Fall</option>
+                            <option>Summer</option>
+                            <option>Spring</option>
+                            </select>
+                            </div>
+                          </div>
+                        <div class="mb-3" style="padding-left:20px; ">
+                          <label for="message-text" class="col-form-label">Select Year:</label>
+                          <div class="dropdown">
+                          <select class="btn btn-secondary dropdown-toggle" id='date-dropdown'>
+                          </select>
+                        </div>
+                        </div>
+                        <div class="mb-3" style="padding-left:20px; ">
+                          <label for="message-text" class="col-form-label">Add </label>
+                          <div class="dropdown">
+                          <button class="btn btn-light"><i data-feather="plus" ></i></button>
+                          </select>
+                        </div>
+                        </div>
+                        </div>
+                      <div  style="display: flex; flex-direction: row;  ">
+                        <div class="mb-3" >
+                          <label for="message-text" class="col-form-label">Select Terms Block-2:</label>
+                          <div class="dropdown">
+                            <select class="btn btn-secondary dropdown-toggle" style="width:13rem" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <option>Select Term</option>
+                            <option>Fall</option>
+                            <option>Summer</option>
+                            <option>Spring</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="mb-3" style="padding-left:20px; ">
+                          <label for="message-text" class="col-form-label">Select Year:</label>
+                          <div class="dropdown">
+                          <select class="btn btn-secondary dropdown-toggle" id='date-dropdown2'>
+                          </select>
+                        </div>
+                        </div>
+                        <div class="mb-3" style="padding-left:20px; ">
+                          <label for="message-text" class="col-form-label">Add </label>
+                          <div class="dropdown">
+                          <button class="btn btn-light"><i data-feather="plus" ></i></button>
+                          </select>
+                        </div>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -420,7 +453,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="templateOneLabelTwoSend">Add Coordinators
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Add to Terms
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -428,22 +461,51 @@
                 </div>
                 <div class="modal-body">
                   <form>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Select Program:</label>
-                      <select class="form-select" multiple aria-label="multiple select example">
-                        <option selected>-----Select One/More Program-----</option>
-                        <option value="1">Master of Business Administration - General Management</option>
-                        <option value="2">Master of Business Administration - Human Resource</option>
-                        <option value="3">Master of Business Administration - Marketing</option>
-                        <option value="4">Master of Business Administration - Business Analytics</option>
-                        <option value="5">Master of Business Administration - Management</option>
-                      </select>
+                    <div  style="display: flex; flex-direction: row;  ">
+                      <div class="mb-3" >
+                        <label for="message-text" class="col-form-label">Select Terms Block-1:</label>
+                        <div class="dropdown">
+                          <select class="btn btn-secondary dropdown-toggle" style="width:13rem" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <option>Select Term</option>
+                          <option>Fall</option>
+                          <option>Summer</option>
+                          <option>Spring</option>
+                          </select>
+                          </div>
+                        </div>
+                      <div class="mb-3" style="padding-left:50px; ">
+                        <label for="message-text" class="col-form-label">Select Year:</label>
+                        <div class="dropdown">
+                        <select class="btn btn-secondary dropdown-toggle" id='date-dropdown3'>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                    <div  style="display: flex; flex-direction: row;  ">
+                      <div class="mb-3" >
+                        <label for="message-text" class="col-form-label">Select Terms Block-2:</label>
+                        <div class="dropdown">
+                          <select class="btn btn-secondary dropdown-toggle" style="width:13rem" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <option>Select Term</option>
+                          <option>Fall</option>
+                          <option>Summer</option>
+                          <option>Spring</option>
+                          </select>
+                          </div>
+                      </div>
+                      <div class="mb-3" style="padding-left:50px; ">
+                        <label for="message-text" class="col-form-label">Select Year:</label>
+                        <div class="dropdown">
+                        <select class="btn btn-secondary dropdown-toggle" id='date-dropdown4'>
+                        </select>
+                      </div>
+                      </div>
                     </div>
                   </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                  <a href="adminCoursesAddTerms.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
                 </div>
               </div>
             </div>
@@ -539,7 +601,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="templateOneLabelTwoSend">Add Coordinators
+                  <h5 class="modal-title" id="templateOneLabelTwoSend">Clone
                   </h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 
@@ -562,7 +624,16 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="adminCoursesClone.html" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                  <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Clone
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                     <a>Course has been Cloned <i data-feather="check-circle"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -782,5 +853,54 @@
     background-color: green;
   }
       </style>
+      <script>
+          let dateDropdown = document.getElementById('date-dropdown'); 
+               
+          let currentYear = (new Date().getFullYear())+3;    
+          let earliestYear = 2000;     
+          while (currentYear >= earliestYear) {      
+            let dateOption = document.createElement('option');          
+            dateOption.text = currentYear;      
+            dateOption.value = currentYear;        
+            dateDropdown.add(dateOption);      
+            currentYear -= 1;    
+          }
+
+          let dateDropdown2 = document.getElementById('date-dropdown2'); 
+               
+          let currentYear2 = (new Date().getFullYear())+3;    
+          let earliestYear2 = 2000;     
+          while (currentYear2 >= earliestYear2) {      
+            let dateOption2 = document.createElement('option');          
+            dateOption2.text = currentYear2;      
+            dateOption2.value = currentYear2;        
+            dateDropdown2.add(dateOption2);      
+            currentYear2 -= 1;    
+          }
+
+          let dateDropdown3 = document.getElementById('date-dropdown3'); 
+               
+          let currentYear3 = (new Date().getFullYear())+3;    
+          let earliestYear3 = 2000;     
+          while (currentYear3 >= earliestYear3) {      
+            let dateOption3 = document.createElement('option');          
+            dateOption3.text = currentYear3;      
+            dateOption3.value = currentYear3;        
+            dateDropdown3.add(dateOption3);      
+            currentYear3 -= 1;    
+          }
+
+          let dateDropdown4 = document.getElementById('date-dropdown4'); 
+               
+          let currentYear4 = (new Date().getFullYear())+3;    
+          let earliestYear4 = 2000;     
+          while (currentYear4 >= earliestYear4) {      
+            let dateOption4 = document.createElement('option');          
+            dateOption4.text = currentYear4;      
+            dateOption4.value = currentYear4;        
+            dateDropdown4.add(dateOption4);      
+            currentYear4 -= 1;    
+          }
+      </script>
   </body>
 </html>

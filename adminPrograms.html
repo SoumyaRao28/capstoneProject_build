@@ -105,35 +105,16 @@
             </i>  Courses
         </a>
                 </li>
+       <!-- Nav item -->
 
-                        <!-- Nav item -->
-                        <li class="nav-item">
-                            <a class="nav-link has-arrow  collapsed " href="#!" data-bs-toggle="collapse" data-bs-target="#navComponents" aria-expanded="false" aria-controls="navComponents">
-                                <i data-feather="calendar" class="nav-icon icon-xs me-2" >
-                            </i> Terms
-                            </a>
-                            <div id="navComponents" class="collapse " data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                              Add Terms
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            Update Terms
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            View Terms
-                                        </a>
-                                    </li>
-                                
-                                </ul>
-                            </div>
-                        </li>
-                       
+                <li class="nav-item">
+                    <a class="nav-link " href="adminTerms.html" aria-expanded="false">
+                        <i data-feather="calendar" class="nav-icon icon-xs me-2">
+                        </i>  Terms
+                    </a>
+                            </li>
+
+                        
 
                             <!-- Nav item -->
                             <li class="nav-item">
@@ -170,29 +151,10 @@
                       
                         <!-- Nav item -->
                         <li class="nav-item">
-                            <a class="nav-link has-arrow  collapsed " href="#!" data-bs-toggle="collapse" data-bs-target="#navStudent" aria-expanded="false" aria-controls="navStudent">
+                            <a class="nav-link " href="adminStudent.html" aria-expanded="false">
                                 <i data-feather="user" class="nav-icon icon-xs me-2" >
                             </i> Student
                             </a>
-                            <div id="navStudent" class="collapse " data-bs-parent="#sideNavbar">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            Add Students
-                                        </a>
-                                    </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="#" aria-expanded="false">
-                                                Update Student
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                        <a class="nav-link " href="#" aria-expanded="false">
-                                            View Students
-                                        </a>
-                                    </li>
-                                    </ul>
-                                    </div>
                                     </li>
 
                   <!-- Nav item -->
@@ -311,6 +273,18 @@
                             <input type="text" class="form-control" id="recipient-name">
                             
                           </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Select Coordinators:</label>
+                            <select class="form-select" multiple aria-label="multiple select example">
+                              <option selected>-----Select One/More Coordinators-----</option>
+                              <option value="1">Daniel Kristeen</option>
+                              <option value="2">Emma Smith</option>
+                              <option value="3">Olivia Johnson</option>
+                              <option value="4">Isabella Williams</option>
+                              <option value="5">Sophia Jones</option>
+                              <option value="5">Charlotte Brown</option>
+                            </select>
+                          </div>
                         </form>
                       </div>
                       <div class="modal-footer">
@@ -359,7 +333,12 @@
                       <input type="text" class="form-control" id="recipient-name" value="5" disabled>
                     </div>
                     <div class="mb-3">
-                      
+                      <label for="message-text" class="col-form-label">Assigned Coordinators:</label>
+                      <select class="form-select" multiple aria-label="multiple select example" disabled>
+                        <option value="1" selected>Daniel Kristeen</option>
+                        <option value="2" selected>Emma Smith</option>
+                        <option value="5" selected>Charlotte Brown</option>
+                      </select>
                     </div>
                   </form>
                 </div>
@@ -390,6 +369,14 @@
                       <input type="text" class="form-control" id="recipient-name" value="12" >
                       <label for="recipient-name" class="col-form-label">Expedited Count:</label>
                       <input type="text" class="form-control" id="recipient-name" value="5" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Assigned Coordinators:</label>
+                      <select class="form-select" multiple aria-label="multiple select example">
+                        <option value="1" selected>Daniel Kristeen</option>
+                        <option value="2" selected>Emma Smith</option>
+                        <option value="5" selected>Charlotte Brown</option>
+                      </select>
                     </div>
                   </form>
                 </div>
@@ -428,7 +415,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="#" ><button type="button" class="btn btn-primary" >Send</button> </a>
+                  <a href="adminProgramsAddCoordinator.html" ><button type="button" class="btn btn-primary" >Save</button> </a>
                 </div>
               </div>
             </div>
