@@ -236,12 +236,140 @@
                       <div class="modal-body">
                         <form>
                           <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">School Email:</label>
-                            <input type="text" class="form-control" placeholder="s538311@nwmissouri.edu" id="recipient-name">
+                            <label for="recipient-name" class="col-form-label">Program Name:</label>
+                            <select class="form-select" multiple aria-label="multiple select example">
+                              <option selected>-----Select One Program-----</option>
+                              <option value="1">Master of Business Administration - General Management</option>
+                              <option value="2">Master of Business Administration - Human Resource</option>
+                              <option value="3">Master of Business Administration - Marketing</option>
+                              <option value="4">Master of Business Administration - Business Analytics</option>
+                              <option value="5">Master of Business Administration - Management</option>
+                            </select>
                           </div>
                           <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <label for="recipient-name" class="col-form-label">Select Term :</label>
+                            <select class="form-select" multiple aria-label="multiple select example">
+                              <option selected>-----Select One Term-----</option>
+                              <option value="1">Fall-1-2018</option>
+                              <option value="2">Fall-2-2018</option>
+                              <option value="3">Spring-1-2018</option>
+                              <option value="4">Spring-2-2018</option>
+                              <option value="5">Fall-1-2019</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <main class="container__main1">
+                              <div>
+                                <!-- <header class="header2">
+                                  <div class="table-responsive">
+                                    <table class="table no-wrap user-table mb-0">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" ></th>
+                                          <th scope="col" class="border-0 text-uppercase font-medium" >Courses</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td >
+                                             <h5 class="font-medium mb-0">Standard</h5>
+                                          </td>
+                                          <td >
+                                            <span class="badge rounded-pill bg-warning">Financial Management-3</span>
+                                            <span class="badge rounded-pill bg-warning">Employment Law-3</span>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td >
+                                             <h5 class="font-medium mb-0">Expedited</h5>
+                                          </td>
+                                          <td >
+                                           
+                                            <span class="badge rounded-pill bg-primary">Organizational Behavior in Administration-3</span>
+                                            <span class="badge rounded-pill bg-primary">Employment Law-3</span>
+                                          <span class="badge rounded-pill bg-primary">Financial Management-3</span>
+                                          </td>
+                                        </tr>
+                                        
+                                      </tbody>
+                                    </table>
+                                </div>
+                                </header> -->
+                                <main>
+                                  <main class="">
+                                    <div class="table-responsive">
+                                      <table class="table no-wrap user-table mb-0">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="border-0 text-uppercase font-medium" class="container__left2">Courses</th>
+                                            <th scope="col" class="border-0 text-uppercase font-medium" class="container__middle2">Standard</th>
+                                            <th scope="col" class="border-0 text-uppercase font-medium" class="container__right2">Expedited</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="container__left2">
+                                                <h5 class="font-medium mb-0">Financial Management-3</h5>
+                                            </td>
+                                            <td class="container__middle2" >
+                                              <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </td>
+                                            <td class="container__right2">
+                                              <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </td>
+                                           
+                                          </tr>
+                                          <tr>
+                                            <td class="container__left2">
+                                                <h5 class="font-medium mb-0">Employment Law-3</h5>
+                                            </td>
+                                            <td class="container__middle2" >
+                                              <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </td>
+                                            <td class="container__right2">
+                                              <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </td>
+                                           
+                                          </tr>
+                                          <tr>
+                                            <td class="container__left2">
+                                                <h5 class="font-medium mb-0">Organizational Behavior in Administration-3</h5>
+                                            </td>
+                                            <td class="container__middle2" >
+                                              <label class="switch">
+                                                <input type="checkbox" >
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </td>
+                                            <td class="container__right2">
+                                              <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                            </td>
+                                           
+                                          </tr>
+                                          
+                                          
+                                        </tbody>
+                                      </table>
+                                  </div>
+                                </main>
+                                </main>
+                            </div>
+                            </main>
                           </div>
                         </form>
                       </div>
@@ -336,7 +464,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-body" >
+                        <div class="card-body" style="height:100vh">
                           <!-- Sidebar -->
                           <div  style="display: flex; flex-direction: row; margin-left:10rem;" >
                             <div class="dropdown" >
@@ -367,197 +495,179 @@
                             </select>
                           </div>
                           <div class="button" style="margin-left:2rem;">
-                            <a href="adminCarousel2.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Search</button></a>
+                            <a href="adminCarousel1.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="@getbootstrap">Search</button></a>
                           </div>
                         </div>
-                        <div>
-                          <br>
-                         
-                          <div class="table-responsive">
-                            <table class="table no-wrap user-table mb-0">
-                              <thead>
-                                <tr>
-                                  <th scope="col" class="border-0 text-uppercase font-medium" >
-                                    <div class="dropdown" >
-                                      <select class="btn btn-white dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <option>Select Program</option>
-                                      <option>ACS</option>
-                                      <option>MIS</option>
-                                      <option>MBA</option>
-                                      </select>
-                                      </div>
-                                  </th>
-                                  <th scope="col" class="border-0 text-uppercase font-medium" >Fall-1-2018 Sem 1</th>
-                                  <th scope="col" class="border-0 text-uppercase font-medium" >Fall-2-2018 Sem 1</th>
-                                  <th scope="col" class="border-0 text-uppercase font-medium" >Spring-1-2019 Sem 1</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px">
-                                     <h5 class="font-medium mb-0">Standard</h5>
-                                  </td>
-                                  <td style="border-right: 5px solid grey;  border-bottom: 0px ">
-                                    <span class="badge rounded-pill bg-warning" >Big Data</span>
-                                    <span class="badge rounded-pill bg-warning">Java</span>
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                    <span class="badge rounded-pill bg-warning">Big Data</span>
-                                    <span class="badge rounded-pill bg-warning">Java</span>
-                                  </td>
-                                  <td style=" border-bottom: 0px ">
-                                    <span class="badge rounded-pill bg-warning">Big Data</span>
-                                    <span class="badge rounded-pill bg-warning">Java</span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                     <h5 class="font-medium mb-0">Expedited</h5>
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                   
-                                    <span class="badge rounded-pill bg-primary">Organizational Behavior in Administration</span>
-                                    <span class="badge rounded-pill bg-primary">Financial Management</span>
-                                
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px " >
-                                   
-                                    <span class="badge rounded-pill bg-primary">Employment Law</span>
-                                    <span class="badge rounded-pill bg-primary">Macroeconomics for Business Managers</span>
-                                  
-                                  </td>
-                                  <td style=" border-bottom: 0px ">
-                                   
-                                    <span class="badge rounded-pill bg-primary">Innovation and Entrepreneurship</span>
-                                    <span class="badge rounded-pill bg-primary">Business Decision Analysis Tools</span>
-                                  </td>
-                                </tr>
-                                <tr >
-                                  <th scope="col" class="text-uppercase font-medium" style="border-right: 5px solid grey; border-bottom: 0px " ></th>
-                                  <th scope="col" class=" text-uppercase font-medium"  style="border-right: 5px solid grey; border-bottom: 0px " >Fall-2-2018 Sem 2</th>
-                                  <th scope="col" class=" text-uppercase font-medium" style="border-right: 5px solid grey; border-bottom: 0px " >Spring-1-2019 Sem 2</th>
-                                  <th scope="col" class=" text-uppercase font-medium"  style=" border-bottom: 0px ">Fall-4-2020 Sem 2</th>
-                                </tr>
-                                <tr>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px " >
-                                     <h5 class="font-medium mb-0">Standard</h5>
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                    <span class="badge rounded-pill bg-warning">Big Data</span>
-                                    <span class="badge rounded-pill bg-warning">Java</span>
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                    <span class="badge rounded-pill bg-warning">Big Data</span>
-                                    <span class="badge rounded-pill bg-warning">Java</span>
-                                  </td>
-                                  <td style=" border-bottom: 0px " >
-                                    <span class="badge rounded-pill bg-warning">Big Data</span>
-                                    <span class="badge rounded-pill bg-warning">Java</span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px " >
-                                     <h5 class="font-medium mb-0">Expedited</h5>
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                   
-                                    <span class="badge rounded-pill bg-primary">Employment Law</span>
-                                    <span class="badge rounded-pill bg-primary">Macroeconomics for Business Managers</span>
-                                  </td>
-                                  <td style="border-right: 5px solid grey; border-bottom: 0px ">
-                                     
-                                    <span class="badge rounded-pill bg-primary">Innovation and Entrepreneurship</span>
-                                    <span class="badge rounded-pill bg-primary">Business Decision Analysis Tools</span>
-                                  </td>
-                                  <td style=" border-bottom: 0px ">
-                                    <span class="badge rounded-pill bg-primary">Evolution of Quality Management</span>
-                                    <span class="badge rounded-pill bg-primary">Quality Improvement Techniques</span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                        <br>
+                        <card2 ></card2>
+                        <div class="card2">
+                          <script src='https://d3js.org/d3.v4.min.js'></script>
+                          <style>
+                            .slice {
+                                cursor: pointer;
+                            }
+                      
+                            .slice .main-arc {
+                                stroke: #fff;
+                                stroke-width: 1px;
+                            }
+                      
+                            .slice .hidden-arc {
+                                fill: none;
+                            }
+                      
+                            .slice text {
+                                pointer-events: none;
+                                dominant-baseline: middle;
+                                text-anchor: middle;
+                            }
+                        </style>
+                                              <script>
+                                                const width = window.innerWidth,
+                                                    height = window.innerHeight,
+                                                    maxRadius = (Math.min(width, height) / 2) - 5 ;
+                                        
+                                                const formatNumber = d3.format(',d');
+                                        
+                                                const x = d3.scaleLinear()
+                                                    .range([0, 2 * Math.PI])
+                                                    .clamp(true);
+                                        
+                                                const y = d3.scaleSqrt()
+                                                    .range([maxRadius*.1, maxRadius]);
+                                        
+                                                const color = d3.scaleOrdinal(d3.schemeCategory20);
+                                        
+                                                const partition = d3.partition();
+                                        
+                                                const arc = d3.arc()
+                                                    .startAngle(d => x(d.x0))
+                                                    .endAngle(d => x(d.x1))
+                                                    .innerRadius(d => Math.max(0, y(d.y0)))
+                                                    .outerRadius(d => Math.max(0, y(d.y1)));
+                                        
+                                                const middleArcLine = d => {
+                                                    const halfPi = Math.PI/2;
+                                                    const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+                                                    const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+                                        
+                                                    const middleAngle = (angles[1] + angles[0]) / 2;
+                                                    const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+                                                    if (invertDirection) { angles.reverse(); }
+                                        
+                                                    const path = d3.path();
+                                                    path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+                                                    return path.toString();
+                                                };
+                                        
+                                                const textFits = d => {
+                                                    const CHAR_SPACE = 6;
+                                        
+                                                    const deltaAngle = x(d.x1) - x(d.x0);
+                                                    const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+                                                    const perimeter = r * deltaAngle;
+                                        
+                                                    return d.data.name.length * CHAR_SPACE < perimeter;
+                                                };
+                                        
+                                                const svg = d3.select('card2').append('svg')
+                                                    .style('width', '80vw')
+                                                    .style('height', 'auto')
+                                                    .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+                                                    .on('click', () => focusOn()); // Reset zoom on canvas click
+                                        
+                                                d3.json('src/assets/js/flare-2.js', (error, root) => {
+                                                    if (error) throw error;
+                                        
+                                                    root = d3.hierarchy(root);
+                                                    root.sum(d => d.size);
+                                        
+                                                    const slice = svg.selectAll('g.slice')
+                                                        .data(partition(root).descendants());
+                                        
+                                                    slice.exit().remove();
+                                        
+                                                    const newSlice = slice.enter()
+                                                        .append('g').attr('class', 'slice')
+                                                        .on('click', d => {
+                                                            d3.event.stopPropagation();
+                                                            focusOn(d);
+                                                        });
+                                        
+                                                    newSlice.append('title')
+                                                        .text(d => d.data.name + '\n' + formatNumber(d.value));
+                                        
+                                                    newSlice.append('path')
+                                                        .attr('class', 'main-arc')
+                                                        .style('fill', d => color((d.children ? d : d.parent).data.name))
+                                                        .attr('d', arc);
+                                        
+                                                    newSlice.append('path')
+                                                        .attr('class', 'hidden-arc')
+                                                        .attr('id', (_, i) => `hiddenArc${i}`)
+                                                        .attr('d', middleArcLine);
+                                        
+                                                    const text = newSlice.append('text')
+                                                        .attr('display', d => textFits(d) ? null : 'none');
+                                        
+                                                    // Add white contour
+                                                    text.append('textPath')
+                                                        .attr('startOffset','50%')
+                                                        .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
+                                                        .text(d => d.data.name)
+                                                        .style('fill', 'none')
+                                                        .style('stroke-linejoin', 'round');
+                                        
+                                                    text.append('textPath')
+                                                        .attr('startOffset','50%')
+                                                        .attr('xlink:href', (_, i) => `#hiddenArc${i}` )
+                                                        .text(d => d.data.name);
+                                                });
+                                        
+                                                function focusOn(d = { x0: 0, x1: 1, y0: 0, y1: 1 }) {
+                                                    // Reset to top-level if no data point specified
+                                        
+                                                    const transition = svg.transition()
+                                                        .duration(750)
+                                                        .tween('scale', () => {
+                                                            const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                                                                yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                                                            return t => { x.domain(xd(t)); y.domain(yd(t)); };
+                                                        });
+                                        
+                                                    transition.selectAll('path.main-arc')
+                                                        .attrTween('d', d => () => arc(d));
+                                        
+                                                    transition.selectAll('path.hidden-arc')
+                                                        .attrTween('d', d => () => middleArcLine(d));
+                                        
+                                                    transition.selectAll('text')
+                                                        .attrTween('display', d => () => textFits(d) ? null : 'none');
+                                        
+                                                    moveStackToFront(d);
+                                        
+                                                    //
+                                        
+                                                    function moveStackToFront(elD) {
+                                                        svg.selectAll('.slice').filter(d => d === elD)
+                                                            .each(function(d) {
+                                                                this.parentNode.appendChild(this);
+                                                                if (d.parent) { moveStackToFront(d.parent); }
+                                                            })
+                                                    }
+                                                }
+                                            </script>
                         </div>
-
-                        <div class="table-responsive">
-                          <table class="table no-wrap user-table mb-0">
-                            <thead>
-                              <tr>
-                                <th scope="col" class="border-0 text-uppercase font-medium" >
-                                  <div class="dropdown" >
-                                    <select class="btn btn-white dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <option>Select Program</option>
-                                    <option>ACS</option>
-                                    <option>MIS</option>
-                                    <option>MBA</option>
-                                    </select>
-                                    <select class="btn btn-white dropdown-toggle"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <option>Select First Semester</option>
-                                    <option>Fall-1-2020</option>
-                                    <option>Fall-2-2020</option>
-                                    <option>Fall-3-2020</option>
-                                    </select>
-                                    </div>
-                                </th>
-                                <th scope="col" class="border-0 text-uppercase font-medium" >Fall-1-2020</th>
-                                <th scope="col" class="border-0 text-uppercase font-medium" >Fall-2-2020</th>
-                                <th scope="col" class="border-0 text-uppercase font-medium" >Fall-3-2020</th>
-
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td >
-                                   <h5 class="font-medium mb-0">Standard</h5>
-                                </td>
-                                <td >
-                                  <span class="badge rounded-pill bg-warning">Big Data</span>
-                                  <span class="badge rounded-pill bg-warning">Java</span>
-                                </td>
-                                <td >
-                                  <span class="badge rounded-pill bg-warning">Big Data</span>
-                                  <span class="badge rounded-pill bg-warning">Java</span>
-                                </td>
-                                <td >
-                                  <span class="badge rounded-pill bg-warning">Big Data</span>
-                                  <span class="badge rounded-pill bg-warning">Java</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td >
-                                   <h5 class="font-medium mb-0">Expedited</h5>
-                                </td>
-                                <td >
-                                 
-                                  <span class="badge rounded-pill bg-primary">Big Data</span>
-                                  <span class="badge rounded-pill bg-primary">Java</span>
-                                <span class="badge rounded-pill bg-primary">Project Management</span>
-                                </td>
-                                <td >
-                                 
-                                  <span class="badge rounded-pill bg-primary">Big Data</span>
-                                  <span class="badge rounded-pill bg-primary">Java</span>
-                                <span class="badge rounded-pill bg-primary">Project Management</span>
-                                </td>
-                                <td >
-                                 
-                                  <span class="badge rounded-pill bg-primary">Big Data</span>
-                                  <span class="badge rounded-pill bg-primary">Java</span>
-                                <span class="badge rounded-pill bg-primary">Project Management</span>
-                                </td>
-                              </tr>
-                              
-                            </tbody>
-                          </table>
                       </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
             </div>
+            
           </div>
           <!-- row  -->
+        </div>
+        <div>
         </div>
       </div>
     </div>
